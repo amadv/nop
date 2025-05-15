@@ -15,8 +15,7 @@ This thing is **stupidly simple**, and that’s the point. No servers, no syncin
 
 Run the script with Perl like so:
 
-```bash
-perl notes.pl --create "Note title here"
+`perl notes.pl --create "Note1"`
 
 Then just write your shit in vi, nano, or whatever you cursed your $EDITOR with.
 
