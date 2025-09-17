@@ -14,7 +14,7 @@ use IO::Handle;
 my $BASEDIR = "$ENV{HOME}/Notes";
 my $NOTES_SH_CACHE = "$ENV{HOME}/.cache/notes.sh";
 my $EXPORT_DIR = "$NOTES_SH_CACHE/export";
-my $EDITOR = $ENV{EDITOR} || 'vim';
+my $EDITOR = $ENV{EDITOR} || 'nvi';
 
 # Helpers
 sub uuid {

@@ -1,51 +1,57 @@
-# nop -> Dead Simple Notes App
+# nop → Dead Simple Notes App
 
-Welcome to the **Dead Simple Notes App** — a no-BS, text-based note taker written in Perl because why the hell not?
+Welcome to **nop**, the no-BS, text-based note taker written in Perl because why the hell not?  
 
-This thing is **stupidly simple**, and that’s the point. No servers, no syncing, no "AI-powered" crap — just you, your terminal, and plain old files.
+This thing is **stupidly simple**, and that’s the point. No servers, no syncing, no "AI-powered" crap — just you, your terminal, and plain old files in `~/Notes`.
 
 ## What the hell does it do?
 
-- Create timestamped notes like a damn ninja
-- Fuzzy find (`fzf`) notes like you’re in the Matrix
-- Export, delete, or read notes without losing your mind
-- All in plain text — because markdown > your favorite database
+- Create timestamped notes like a damn ninja  
+- Fuzzy find (`fzf`) notes like you’re in the Matrix  
+- Export, delete, or read notes without losing your mind  
+- All in plain text — because markdown > your favorite database  
 
-## Usage
+## Installation
 
-Run the script with Perl like so:
+Clone this repo (or just grab `nop.pl`), then run the setup script:
 
-`perl notes.pl --create "Note1"`
+```bash
+perl setup_nop.pl
+```
 
-Then just write your shit in vi, nano, or whatever you cursed your $EDITOR with.
+This will:
 
-### Creating a note
+    * Create ~/Notes/ for your chaos
 
-`perl notes.pl --create "My cool ass note"`
+    * Symlink nop.pl into ~/.local/bin/nop
 
-It'll pop open your editor and let you scribble brilliance.
+    * Make sure it’s executable
 
-### Fuzzy find a note
 
-`perl notes.pl --fzf`
+Now you can just type from anywhere
 
-Start typing that vague crap you think you wrote 2 weeks ago — it’ll find it.
+```bash
+nop
+```
 
-### Deleting a note
+## Quick Example Session
 
-`perl notes.pl --delete`
+Here’s how a typical workflow feels:
 
-It’ll ask, “Are you sure?” like a sane person. Hit y if you really wanna nuke it.
+### 1. Create a note
+```bash
+nop --create "Buy milk and whiskey"
+```
 
-### Export a note
+### 2. List notes
+```bash
+nop --list
+```
 
-`perl notes.pl --export`
-
-Spits out the raw note into your terminal. Copy-paste that bad boy wherever you want.
-
-### List notes
-
-`perl notes.pl --list`
+### 3. Fuzzy find note
+```bash
+nop --fzf
+```
 
 Gives you a pretty list of all your chaos.
 
