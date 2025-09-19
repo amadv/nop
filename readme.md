@@ -42,18 +42,31 @@ Here’s how a typical workflow feels:
 ```bash
 nop --create "Buy milk and whiskey"
 ```
+It’ll pop open your $EDITOR (defaults to vi) and let you scribble brilliance.
 
 ### 2. List notes
 ```bash
 nop --list
 ```
+Gives you a pretty list of all your chaos.
 
 ### 3. Fuzzy find note
 ```bash
 nop --fzf
 ```
+Start typing that vague crap you think you wrote 2 weeks ago — it’ll find it.
 
-Gives you a pretty list of all your chaos.
+### 4. Deleting a note
+```bash
+nop --delete
+```
+it’ll ask, “Are you sure?” like a sane person. Hit y if you really wanna nuke it.
+
+### 5. Export note
+```bash
+nop --export
+```
+Spits out the raw note into your terminal. Copy-paste that bad boy wherever you want.
 
 ### How to tweak it
 
@@ -69,4 +82,4 @@ Because you’re tired of Electron apps eating your RAM just to write “Buy mil
 
 Because Notion doesn’t work offline when you're in the goddamn woods.
 
-Because you like owning your shit.
+Because you like owning your shit. Enjoy
